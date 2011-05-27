@@ -1,0 +1,17 @@
+== Requirements
+EyeD3 python module (http://eyed3.nicfit.net/)
+
+== Usage:
+./id3fromfile.py <FilePattern> <FilenameTemplate>
+
+Example: ./id3fromfile.py "*.mp3" '$track-$title' if your file are named as 01-Intro.mp3
+
+FilePattern must be write with " at start and end.
+FilenameTemplate is a map of ID3Tag token and can be:
+
+  * $title
+  * $track
+  * $album
+  * $year
+
+
